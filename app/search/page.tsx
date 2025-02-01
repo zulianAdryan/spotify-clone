@@ -4,15 +4,15 @@ import getSongsByTitle from "@/actions/getSongsByTitle";
 import SearchContent from "./components/search-content";
 
 interface Props {
-  searchParams: {
+  searchParams: Promise<{
     title: string;
-  };
+  }>;
 }
 
 export const revalidate = 0;
 
 const Page = async ({ searchParams }: Props) => {
-  const { title } = searchParams;
+  const { title } = await searchParams;
   const songs = await getSongsByTitle(title);
 
   return (
