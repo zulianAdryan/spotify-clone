@@ -1,5 +1,7 @@
 "use client";
 
+import useAuthModal from "@/hooks/useAuthModal";
+import { useUser } from "@/hooks/useUser";
 import { cn } from "@/lib/utils";
 import { ClassValue } from "clsx";
 import Image from "next/image";
@@ -14,9 +16,15 @@ interface Props {
 }
 
 const ListItem: React.FC<Props> = ({ href, image, name, className }) => {
+  const authModal = useAuthModal();
   const router = useRouter();
+  const { user } = useUser();
 
   const onClick = () => {
+    if (!user) {
+      authModal.onOpen();
+      return;
+    }
     router.push(href);
   };
 

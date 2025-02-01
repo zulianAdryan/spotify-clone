@@ -21,7 +21,7 @@ export default async function getSongsByUserId(): Promise<Array<Song>> {
     .order("created_at", { ascending: false });
 
   if (error) {
-    console.error(error.message);
+    // console.error(error.message);
   }
 
   return data || [];

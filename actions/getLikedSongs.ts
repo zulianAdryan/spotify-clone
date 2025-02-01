@@ -18,7 +18,7 @@ export default async function getLikedSongs(): Promise<Array<Song>> {
     .order("created_at", { ascending: false });
 
   if (error) {
-    console.error(error.message);
+    // console.error(error.message);
     return [];
   }
 
