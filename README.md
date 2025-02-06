@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Spotify Clone with Next.js, TypeScript, Supabase & Stripe
 
-## Getting Started
+    This is a Spotify clone web application built using Next.js 15, TypeScript, Supabase for the backend, and Stripe for payment integration. The app mimics the basic functionality of Spotify, providing a music streaming platform with user authentication, playlist management, and payment processing.
 
-First, run the development server:
+# Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Authentication: User sign-up, login, and authentication using Supabase.
+- Music Streaming: Search, play, and manage music tracks.
+- Playlist Management: Create, update, and delete playlists.
+- Payment Integration: Stripe integration for premium subscriptions.
+- Responsive Design: Fully responsive interface for desktop and mobile devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 15: A React-based framework for building scalable web applications.
+- TypeScript: A typed superset of JavaScript for better development experience.
+- Supabase: A backend-as-a-service (BaaS) providing authentication, database, and storage.
+- Stripe: A payment processing platform for handling subscription payments.
+  Tailwind CSS: Utility-first CSS framework for responsive design.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Key Features
 
-## Learn More
+Authentication
+The app supports user authentication using Supabase's auth system. Users can sign up, log in, and manage their sessions.
 
-To learn more about Next.js, take a look at the following resources:
+### Music Player
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+A basic music player is implemented with play, pause, skip, and volume control features. It allows users to stream music, much like Spotify.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Playlist Management
 
-## Deploy on Vercel
+Users can create custom playlists, add/remove songs to/from playlists, and manage them in their dashboard.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Stripe Payment Integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To allow premium features like ad-free music, users can subscribe to a paid plan using Stripe. The integration handles payment processing securely.
