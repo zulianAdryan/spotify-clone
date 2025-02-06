@@ -1,6 +1,6 @@
 # Spotify Clone with Next.js, TypeScript, Supabase & Stripe
 
-    This is a Spotify clone web application built using Next.js 15, TypeScript, Supabase for the backend, and Stripe for payment integration. The app mimics the basic functionality of Spotify, providing a music streaming platform with user authentication, playlist management, and payment processing.
+This is a Spotify clone web application built using Next.js 15, TypeScript, Supabase for the backend, and Stripe for payment integration. The app mimics the basic functionality of Spotify, providing a music streaming platform with user authentication, playlist management, and payment processing.
 
 # Features
 
